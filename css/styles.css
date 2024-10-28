@@ -1,0 +1,151 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 20px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.logo img {
+  width: 240px; 
+  height: auto; 
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.main-section {
+  position: relative;
+  height: 100vh;
+  background: url('../images/cableAcero.jpeg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .menu ul {
+    gap: 10px;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .main-section {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 120px; /* Tamaño más pequeño para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .main-section {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 100px; /* Tamaño aún más pequeño para pantallas pequeñas */
+  }
+}
