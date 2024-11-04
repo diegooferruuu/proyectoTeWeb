@@ -294,12 +294,14 @@ margin-top: 20px;
     height: 200px; 
   }
 
-  .product-card {
-    width: 100%; 
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
-  .product-container {
-    gap: 10px; 
+  .product-card {
+    width: 100%;
   }
 
   .footer-content {
